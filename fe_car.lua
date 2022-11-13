@@ -1,3 +1,6 @@
+carspeed = 3000
+
+--made by 1+1=2(roblox)/rouxhaver(github)
 --required hats
 --https://www.roblox.com/catalog/9661543986
 --https://www.roblox.com/catalog/4246228452
@@ -9,7 +12,10 @@
 --https://www.roblox.com/catalog/4047554959
 --https://www.roblox.com/catalog/3992084515
 --https://www.roblox.com/catalog/4489239608
---due to reanimation issues hats on the wheels are disabled
+
+--(issue 1) the car will slowly drift off in a direction
+--(issue 2) when jumping out of car it moves freely for you but not others
+--(issue 3) sometimes hats will fall off when entering car again
 
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Heartbeat = game:GetService("RunService").Heartbeat
@@ -54,7 +60,7 @@ end
     Duration = 16;
     
 wait(3)
-player = workspace:WaitForChild("Imao_96sbrother")
+player = game:GetService("Players").LocalPlayer.Character
 
 currentcar = Instance.new("Folder",workspace)
 currentcar.Name = tostring(math.random(100000,999999))
@@ -168,7 +174,7 @@ turn.ApplyAtCenterOfMass = false
 
 mouse.KeyDown:connect(function(key)
 	if key == "w" and flip2 == 1 then
-		thrust.Force = Vector3.new(-1000,0,0)
+		thrust.Force = Vector3.new(carspeed*-1,0,0)
 	end
 end)
 
@@ -180,7 +186,7 @@ end)
 
 mouse.KeyDown:connect(function(key)
 	if key == "s" and flip2 == 1 then
-		thrust.Force = Vector3.new(1000,0,0)
+		thrust.Force = Vector3.new(carspeed,0,0)
 	end
 end)
 
@@ -217,40 +223,47 @@ end)
 loadstring(game:HttpGet("https://pastebin.com/raw/vFvGu2yB",true))()
 
 local hat = game.Players.LocalPlayer.Character["Nike Shoebox Costume"]
-makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.carbody,true,false)
+makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.carbody,false,false)
 
---local hat = game.Players.LocalPlayer.Character["MeshPartAccessory"]
---makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.wheel1,true,false)
+local wheelv1 = game.Players.LocalPlayer.Character["MeshPartAccessory"]
+makemovers(wheelv1.Handle,CFrame.new(1.5,1.5,-1),currentcar.carbody,false,false)
 
---local hat = game.Players.LocalPlayer.Character["MeshPartAccessory"]
---makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.wheel2,true,false)
+local wheelv2 = game.Players.LocalPlayer.Character["MeshPartAccessory"]
+makemovers(wheelv2.Handle,CFrame.new(-1.5,1.5,-1),currentcar.carbody,false,false)
 
---local hat = game.Players.LocalPlayer.Character["MeshPartAccessory"]
---makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.wheel3,true,false)
+local wheelv3 = game.Players.LocalPlayer.Character["MeshPartAccessory"]
+makemovers(wheelv3.Handle,CFrame.new(1.5,-1.5,-1),currentcar.carbody,false,false)
 
---local hat = game.Players.LocalPlayer.Character["MeshPartAccessory"]
---makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.wheel4,true,false)
-
-local hat = game.Players.LocalPlayer.Character["InternationalFedora"]
-makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.seat1,true,false)
+local wheelv4 = game.Players.LocalPlayer.Character["MeshPartAccessory"]
+makemovers(wheelv4.Handle,CFrame.new(-1.5,-1.5,-1),currentcar.carbody,false,false)
 
 local hat = game.Players.LocalPlayer.Character["International Fedora"]
-makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.seat2,true,false)
+makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.seat1,false,false)
 
 local hat = game.Players.LocalPlayer.Character["International Fedora"]
-makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.seat3,true,false)
+makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.seat2,false,false)
 
 local hat = game.Players.LocalPlayer.Character["InternationalFedora"]
-makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.seat4,true,false)
+makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.seat3,false,false)
 
 local hat = game.Players.LocalPlayer.Character["InternationalFedora"]
-makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.seat5,true,false)
+makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.seat4,false,false)
+
+local hat = game.Players.LocalPlayer.Character["InternationalFedora"]
+makemovers(hat.Handle,CFrame.new(0,0,0),currentcar.seat5,false,false)
 
 while wait(0.001) do
-	if workspace:WaitForChild("Imao_96sbrother"):WaitForChild("Humanoid").Jump == true and flip == 1 then
+    wheelv1.Handle.Attachment.Orientation = currentcar.wheel1.Rotation
+    wheelv2.Handle.Attachment.Orientation = currentcar.wheel2.Rotation
+    wheelv3.Handle.Attachment.Orientation = currentcar.wheel3.Rotation
+    wheelv4.Handle.Attachment.Orientation = currentcar.wheel4.Rotation
+	if game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid").Jump == true and flip == 1 then
 		workspace:FindFirstChild("funny"):Destroy()
 		flip2 = 0
 		wait(2)
 		flip = 0
 	end
+    if game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid").Health == 0 then
+        currentcar:Destroy()
+    end
 end
