@@ -9,7 +9,7 @@
 --https://www.roblox.com/catalog/4047554959
 --https://www.roblox.com/catalog/3992084515
 --https://www.roblox.com/catalog/4489239608
-
+--due to reanimation issues hats on the wheels are disabled
 
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Heartbeat = game:GetService("RunService").Heartbeat
