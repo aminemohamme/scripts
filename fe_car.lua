@@ -1,6 +1,7 @@
 carspeed = 3000
 
 --made by 1+1=2(roblox)/rouxhaver(github)
+--only works with r6
 --required hats
 --https://www.roblox.com/catalog/9661543986
 --https://www.roblox.com/catalog/4246228452
