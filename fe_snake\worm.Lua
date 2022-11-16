@@ -1,5 +1,6 @@
 --reanimate by MyWorld#4430 discord.gg/pYVHtSJmEY
 --snake by 1+1=2(roblox)/rouxhaver(github)
+--use with r6 (r15 possible)
 local v3_net, v3_808 = Vector3.new(0.1, 25.1, 0.1), Vector3.new(8, 0, 8)
 local function getNetlessVelocity(realPartVelocity)
     if realPartVelocity.Magnitude > 1 then
