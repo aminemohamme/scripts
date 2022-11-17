@@ -1,5 +1,5 @@
 carspeed = 750
-
+turnspeed = 350
 --made by 1+1=2(roblox)/rouxhaver(github)
 --only works with r6
 --required hats
@@ -14,6 +14,9 @@ carspeed = 750
 --https://www.roblox.com/catalog/3992084515
 --https://www.roblox.com/catalog/4489239608
 
+--(issue 1) the car will slowly drift off in a direction
+--(issue 2) when jumping out of car it moves freely for you but not others
+--(issue 3) sometimes hats will fall off when entering car again
 
 --reanimate by MyWorld#4430 discord.gg/pYVHtSJmEY
 --"oMg tHIs cODe iS uNReaDabLe sO iT SUckS" -its not a script for u to understand and edit but to use with your other scripts
@@ -1053,7 +1056,7 @@ end)
 
 mouse.KeyDown:connect(function(key)
 	if key == "a" then
-		turn.Force = Vector3.new(0,350,0)
+		turn.Force = Vector3.new(0,turnspeed,0)
 	end
 end)
 
@@ -1065,7 +1068,7 @@ end)
 
 mouse.KeyDown:connect(function(key)
 	if key == "d"then
-		turn.Force = Vector3.new(0,-350,0)
+		turn.Force = Vector3.new(0,-turnspeed,0)
 	end
 end)
 
