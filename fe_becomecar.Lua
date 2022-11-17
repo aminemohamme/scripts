@@ -14,10 +14,6 @@ turnspeed = 350
 --https://www.roblox.com/catalog/3992084515
 --https://www.roblox.com/catalog/4489239608
 
---(issue 1) the car will slowly drift off in a direction
---(issue 2) when jumping out of car it moves freely for you but not others
---(issue 3) sometimes hats will fall off when entering car again
-
 --reanimate by MyWorld#4430 discord.gg/pYVHtSJmEY
 --"oMg tHIs cODe iS uNReaDabLe sO iT SUckS" -its not a script for u to understand and edit but to use with your other scripts
 local v3_net, v3_808 = Vector3.new(0.1, 25.1, 0.1), Vector3.new(8, 0, 8)
