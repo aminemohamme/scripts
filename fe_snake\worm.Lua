@@ -1,6 +1,13 @@
 --reanimate by MyWorld#4430 discord.gg/pYVHtSJmEY
 --snake by 1+1=2(roblox)/rouxhaver(github)
---use with r6 (r15 possible by removing line 919)
+--use with r6 and blocky r15
+
+me = workspace[game.Players.LocalPlayer.Name]
+
+local rtype = 0
+if me.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+    rtype = 1
+end
 
 local v3_net, v3_808 = Vector3.new(0.1, 25.1, 0.1), Vector3.new(8, 0, 8)
 local function getNetlessVelocity(realPartVelocity)
@@ -917,7 +924,12 @@ me.Torso["Left Hip"]:Destroy()
 me.Torso["Right Hip"]:Destroy()
 me.Torso["Left Shoulder"]:Destroy()
 me.Torso["Right Shoulder"]:Destroy()
-me.Torso.att1_Torso:Destroy()
+if rtype == 1 then do
+    me.Torso.att1_Torso:Destroy()
+end else
+    me.Torso.att1_LowerTorso:Destroy()
+    me.Torso.att1_UpperTorso:Destroy()
+end
 
 s1 = Instance.new("Part", me)
 s1.Position = me["Left Leg"].Position
