@@ -19,4 +19,7 @@ weld.Part1 = player.HumanoidRootPart
 while wait(0.01) do
     player.Humanoid.PlatformStand = true
 	force.Force = player.Humanoid.MoveDirection * 1500
+    if player.Humanoid.Health == 0 then
+        break
+    end
 end
