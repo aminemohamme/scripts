@@ -1,4 +1,3 @@
-thanks for MyWorld#4430 for making his amazing reanimator.
-his server is discord.gg/pYVHtSJmEY.
-I will be updating scripts and adding more.
-I'll work on r15 compatibility.
+these are scripts that are made or edited by me.
+I like to make universal fe scripts aswell as text art for rate my avatar.
+you can contact me on roblox(@Imao_96sbrother) or discord(Average_Modder#0453)
