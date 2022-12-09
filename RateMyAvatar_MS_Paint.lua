@@ -1,5 +1,3 @@
---video comming soon
-
 BoothImage = 1532965095
 
 Red = utf8.char(0x00002764)
