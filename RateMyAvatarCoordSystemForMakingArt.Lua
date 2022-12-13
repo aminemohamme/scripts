@@ -1,3 +1,4 @@
+--coordinate sytem for making art and games
 --having a higher "pixel" count than 1400 might cause issues
 Width = 40
 Height = 35
