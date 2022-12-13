@@ -20,7 +20,9 @@ local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;
 --while wait() do
 
 SetCoordinate("X1,Y1",5)
-
+if RC[coord["X1,Y1"]] == 5 then
+	print("balls")
+end
 
 Render(0x0001F5A4,-- 0 black
 	   0x0001F90D,-- 1 white
