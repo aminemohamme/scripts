@@ -1,4 +1,5 @@
 --made by 1+1=2/rouxhaver
+--only works with r6
 --click somewhere to move your friend
 --press V to wave
 --your friend will dance with you "/e dance"
