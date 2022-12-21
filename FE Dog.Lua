@@ -3,6 +3,7 @@
 --click somewhere to move your dog
 --feel free to mess around with the reanimate settings
 
+
 --REQUIRED hats/hair:
 --https://www.roblox.com/catalog/48474313/Red-Roblox-Cap
 --https://www.roblox.com/catalog/62724852/Chestnut-Bun
@@ -11,7 +12,7 @@
 --https://www.roblox.com/catalog/4047554959/International-Fedora-Brazil
 --https://www.roblox.com/catalog/63690008/Pal-Hair
 --https://www.roblox.com/catalog/62234425/Brown-Hair
-
+--(you can wear three other hats that will go on the dogs head)
 
 --reanimate by MyWorld#4430 discord.gg/pYVHtSJmEY
 --"oMg tHIs cODe iS uNReaDabLe sO iT SUckS" -its not a script for u to understand and edit but to use with your other scripts
