@@ -1,0 +1,1 @@
+I'm completely find if you take one of my ideas and make your own script with it, But if you do please comment under the video saying that you used the idea and also say where I can find your script(i'm fine if you steal viewers or something)
