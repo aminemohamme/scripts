@@ -1,6 +1,7 @@
 --Made by 1+1=2/rouxhaver
 --instructions inside
 --remade with more features
+--use ANY hats
 
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Heartbeat = game:GetService("RunService").Heartbeat
