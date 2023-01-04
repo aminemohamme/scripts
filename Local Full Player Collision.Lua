@@ -1,4 +1,5 @@
 --makes it so that you can collide with players and their limbs (Use with scripts like Snake)
+--NOTE: collision is not server sided and only happens on your client
 
 RunService = game:GetService("RunService")
 
