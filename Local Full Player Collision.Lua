@@ -1,5 +1,5 @@
 --makes it so that you can collide with players and their limbs (Use with scripts like Snake)
---NOTE: collision is not server sided and only happens on your client
+--NOTE: collision is not server sided and only happens on your client (Fling scripts only work on you not others)
 
 RunService = game:GetService("RunService")
 
