@@ -21,6 +21,7 @@
 --Snake will go up when not moving
 
 
+
 if workspace:FindFirstChild("COLISION CHECKER") == nil then
 checker = Instance.new("BoolValue",workspace)
 checker.Name = "COLISION CHECKER"
@@ -47,89 +48,6 @@ while wait(3) do
 end
 end)()
 end
-
-local randomstr = tostring(math.random(100000000,999999999))
-
-local randomize = Instance.new("ScreenGui")
-local randomize_2 = Instance.new("Frame")
-local randomize_3 = Instance.new("TextLabel")
-local randomize_4 = Instance.new("TextLabel")
-local randomize_5 = Instance.new("TextLabel")
-local randomize_6 = Instance.new("TextButton")
-
-
-randomize.Name = randomstr
-randomize.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-randomize.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-randomize_2.Name = randomstr
-randomize_2.Parent = randomize
-randomize_2.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
-randomize_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-randomize_2.BorderSizePixel = 10
-randomize_2.Position = UDim2.new(0.41513592, 0, 0.377777755, 0)
-randomize_2.Size = UDim2.new(0, 230, 0, 197)
-
-randomize_3.Name = randomstr
-randomize_3.Parent = randomize_2
-randomize_3.Active = false
-randomize_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-randomize_3.BackgroundTransparency = 1.000
-randomize_3.Position = UDim2.new(0.0652173907, 0, 0.0913705602, 0)
-randomize_3.Size = UDim2.new(0, 208, 0, 88)
-randomize_3.Font = Enum.Font.SourceSans
-randomize_3.Text = "Made by:"
-randomize_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-randomize_3.TextSize = 33.000
-randomize_3.TextWrapped = true
-
-randomize_4.Name = randomstr
-randomize_4.Parent = randomize_2
-randomize_4.Active = false
-randomize_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-randomize_4.BackgroundTransparency = 1.000
-randomize_4.Position = UDim2.new(0.0652173907, 0, 0.370558381, 0)
-randomize_4.Size = UDim2.new(0, 206, 0, 48)
-randomize_4.Font = Enum.Font.SourceSans
-randomize_4.Text = "(1+1=2 on roblox)"
-randomize_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-randomize_4.TextSize = 33.000
-randomize_4.TextWrapped = true
-
-randomize_5.Name = randomstr
-randomize_5.Parent = randomize_2
-randomize_5.Active = false
-randomize_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-randomize_5.BackgroundTransparency = 1.000
-randomize_5.Position = UDim2.new(0.0652173907, 0, 0.558375657, 0)
-randomize_5.Size = UDim2.new(0, 205, 0, 46)
-randomize_5.Font = Enum.Font.SourceSans
-randomize_5.Text = "(rouxhaver on github)"
-randomize_5.TextColor3 = Color3.fromRGB(0, 0, 0)
-randomize_5.TextScaled = true
-randomize_5.TextSize = 33.000
-randomize_5.TextWrapped = true
-
-randomize_6.Name = randomstr.."2"
-randomize_6.Parent = randomize_2
-randomize_6.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-randomize_6.BorderColor3 = Color3.fromRGB(170, 0, 0)
-randomize_6.BorderSizePixel = 3
-randomize_6.Position = UDim2.new(0.845000029, 0, 0.0149999997, 0)
-randomize_6.Size = UDim2.new(0, 33, 0, 33)
-randomize_6.Font = Enum.Font.SourceSans
-randomize_6.Text = "X"
-randomize_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-randomize_6.TextScaled = true
-randomize_6.TextSize = 14.000
-randomize_6.TextWrapped = true
-
-local frame = Game.Players.LocalPlayer.PlayerGui[randomstr]
-local close = frame[randomstr][randomstr.."2"]
-
-close.MouseButton1Click:connect(function()
-	frame.Enabled = false
-end)
 
 
 me = workspace[game.Players.LocalPlayer.Name]
@@ -1038,6 +956,90 @@ end
 --lp:GetMouse().Button1Down:Connect(fling) --click fling
 
 wait(5.1)
+
+local randomstr = tostring(math.random(100000000,999999999))
+
+local randomize = Instance.new("ScreenGui")
+local randomize_2 = Instance.new("Frame")
+local randomize_3 = Instance.new("TextLabel")
+local randomize_4 = Instance.new("TextLabel")
+local randomize_5 = Instance.new("TextLabel")
+local randomize_6 = Instance.new("TextButton")
+
+
+randomize.Name = randomstr
+randomize.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+randomize.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+randomize_2.Name = randomstr
+randomize_2.Parent = randomize
+randomize_2.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+randomize_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+randomize_2.BorderSizePixel = 10
+randomize_2.Position = UDim2.new(0.41513592, 0, 0.377777755, 0)
+randomize_2.Size = UDim2.new(0, 230, 0, 197)
+
+randomize_3.Name = randomstr
+randomize_3.Parent = randomize_2
+randomize_3.Active = false
+randomize_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+randomize_3.BackgroundTransparency = 1.000
+randomize_3.Position = UDim2.new(0.0652173907, 0, 0.0913705602, 0)
+randomize_3.Size = UDim2.new(0, 208, 0, 88)
+randomize_3.Font = Enum.Font.SourceSans
+randomize_3.Text = "Made by:"
+randomize_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+randomize_3.TextSize = 33.000
+randomize_3.TextWrapped = true
+
+randomize_4.Name = randomstr
+randomize_4.Parent = randomize_2
+randomize_4.Active = false
+randomize_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+randomize_4.BackgroundTransparency = 1.000
+randomize_4.Position = UDim2.new(0.0652173907, 0, 0.370558381, 0)
+randomize_4.Size = UDim2.new(0, 206, 0, 48)
+randomize_4.Font = Enum.Font.SourceSans
+randomize_4.Text = "(1+1=2 on roblox)"
+randomize_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+randomize_4.TextSize = 33.000
+randomize_4.TextWrapped = true
+
+randomize_5.Name = randomstr
+randomize_5.Parent = randomize_2
+randomize_5.Active = false
+randomize_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+randomize_5.BackgroundTransparency = 1.000
+randomize_5.Position = UDim2.new(0.0652173907, 0, 0.558375657, 0)
+randomize_5.Size = UDim2.new(0, 205, 0, 46)
+randomize_5.Font = Enum.Font.SourceSans
+randomize_5.Text = "(rouxhaver on github)"
+randomize_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+randomize_5.TextScaled = true
+randomize_5.TextSize = 33.000
+randomize_5.TextWrapped = true
+
+randomize_6.Name = randomstr.."2"
+randomize_6.Parent = randomize_2
+randomize_6.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+randomize_6.BorderColor3 = Color3.fromRGB(170, 0, 0)
+randomize_6.BorderSizePixel = 3
+randomize_6.Position = UDim2.new(0.845000029, 0, 0.0149999997, 0)
+randomize_6.Size = UDim2.new(0, 33, 0, 33)
+randomize_6.Font = Enum.Font.SourceSans
+randomize_6.Text = "X"
+randomize_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+randomize_6.TextScaled = true
+randomize_6.TextSize = 14.000
+randomize_6.TextWrapped = true
+
+local frame = Game.Players.LocalPlayer.PlayerGui[randomstr]
+local close = frame[randomstr][randomstr.."2"]
+
+close.MouseButton1Click:connect(function()
+	frame.Enabled = false
+end)
+
 me = workspace[game.Players.LocalPlayer.Name]
 
 me.Head.att1_Head.CFrame = CFrame.new(0, -4, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
