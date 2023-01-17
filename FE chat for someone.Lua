@@ -1,7 +1,7 @@
 --made by rouxhaver/1+1=2
 --chat "/e chat <Display name>" to move your head to someone, then when you chat it looks like they chatted (;
 
---only works well in games without player collison and no chat gui (Like Rate My Avatar)
+--only works well in games without player collison, no chat gui and bubble chat (Like Rate My Avatar)
 
 --recommended Head:
 --https://www.roblox.com/bundles/337/City-Life-Woman
