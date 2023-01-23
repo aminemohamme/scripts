@@ -906,4 +906,7 @@ if flingpart0 and flingpart1 then
     end
 end
 
-lp:GetMouse().Button1Down:Connect(fling) --click fling
+lp:GetMouse().Button1Down:Connect(fling) --click fling (optional)
+
+wait(5) -- (rouxhaver: Only line I added cause sometimes hats fall and might break scripts)
+-- (script ↓here↓)
