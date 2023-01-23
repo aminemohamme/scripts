@@ -1,5 +1,4 @@
 -- made by rouxhaver/1+1=2
--- this is unfinished; i want to add a little more to this and this WILL be updated soon
 
 YourWebhook = "https://discord.com/api/webhooks/" -- REQUIRED discord webhook if you want to record responses
 adjectives = string.split(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/random-sh-t/main/ADJECTIVESGOTDAMMIT.txt"),"\n") -- my list of adjectives
@@ -8,6 +7,15 @@ local function say(text)
 	getgenv().Text = text
 	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(getgenv().Text,"All")
 end
+
+coroutine.wrap(function() -- camera script
+	local player = game.Players.LocalPlayer
+	local cam = workspace.CurrentCamera
+	cam.CameraType = "Scriptable"
+	while task.wait() do
+		cam.CFrame = (player.Character.Head.CFrame + player.Character.Head.CFrame.LookVector * -10) * CFrame.Angles(math.rad(-45),0,0) + Vector3.new(0,10,0)
+	end
+end)()
 
 
 TeleportService = game:GetService("TeleportService")
@@ -29,7 +37,7 @@ function teleport()
 	    	if #servers > 0 then
 	    		TeleportService:TeleportToPlaceInstance(game.PlaceId, servers[math.random(1, #servers)], game.Players.LocalPlayer)
     		else
-                player:Kick("only one server lol")
+                game.Players.LocalPlayer:Kick("only one server lol")
 	    	end
 	end
 end
@@ -135,8 +143,8 @@ OnMessageEvent.OnClientEvent:Connect(function(data)
         WebHooked = ".\n"..player.Name..": \""..generatedmessage.."\",\n"..WebHooked..message.."\""
         lowered = string.lower(message)
         if lowered:match("thank") or lowered:match("ty") or lowered:match("you too") or lowered:match("you to") or lowered:match("thx") then
-            WebHooked = WebHooked.."\n"..player.Name..": \"Your welcome\""
-            say("Your welcome")
+            WebHooked = WebHooked.."\n"..player.Name..": \"You\'re welcome\""
+            say("You\'re welcome")
             wait(2)
         end
         pnext = true
@@ -167,6 +175,10 @@ for i,v in pairs(game.Players:GetDescendants()) do
 
             wait(0.01)
             count69 = count69 + 1
+            end
+
+            if workspace:FindFirstChild(interest) == nil then 
+               break
             end
 
             difference = workspace[interest].HumanoidRootPart.Position.X - player.Character.HumanoidRootPart.Position.X
