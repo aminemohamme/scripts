@@ -1,8 +1,4 @@
--- Uploading this because MyWorlds discord server got deleted
--- this script is entirely made by MyWorld#4430, the only changes are some settings
--- https://www.youtube.com/@MyWorld4430 (MyWorlds youtube channel)
--- https://discord.gg/2PtDHYUSu5 (sukma Hubs discord server with more information)
--- I'll most likely remove this once everything clears up, please don't credit me if you use this script
+-- MyWorlds discord server recently got deleted and things are still clearing up so i'll leave this up till he posts his scripts again
 --#########################################################
 
 
