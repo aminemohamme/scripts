@@ -1,5 +1,6 @@
 -- made by rouxhaver/1+1=2
 -- use any hats
+-- make sure to run a netless/netbypass before running this script
 
 local randomstr = tostring(math.random(100000000,999999999))
 
