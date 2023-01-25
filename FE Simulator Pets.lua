@@ -1,4 +1,5 @@
 -- made by rouxhaver/1+1=2
+-- use any hats
 
 local randomstr = tostring(math.random(100000000,999999999))
 
