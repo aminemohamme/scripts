@@ -4,6 +4,9 @@
 --I'm currently trying to take a short break from scripting so please be patient.
 --In the future I'll try to at least finish my scripts before posting them Lmao.
 
+--reposters be damned (jk I honeslty don't care if you repost as long as you leave my credit)
+
+
 
 --made by rouxhaver/1+1=2
 
