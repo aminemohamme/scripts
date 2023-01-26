@@ -1,3 +1,10 @@
+--Hopefully you see this (Reposts) but this script aint finished and it's getting a quite popular, there is a few things I want to add and theres bugs to fix.
+--I am Going to update the name of the script (so people know there are changes) and doing so WILL break url links to the script.
+--whilst the changes probably wont be crazy I do wanna add some animations and other shit.
+--I'm currently trying to take a short break from scripting so please be patient.
+--In the future I'll try to at least finish my scripts before posting them Lmao.
+
+
 --made by rouxhaver/1+1=2
 
 --REQUIRED hats/hair:
