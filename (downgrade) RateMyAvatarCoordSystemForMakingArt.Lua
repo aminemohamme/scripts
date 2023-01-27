@@ -1,7 +1,7 @@
 --coordinate sytem for making art and games
---having a higher "pixel" count than 1400 might cause issues
-Width = 40
-Height = 35
+
+Width = 6
+Height = 5
 
 function Output1(Output1)
 	local args = {
