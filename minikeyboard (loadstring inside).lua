@@ -1,5 +1,41 @@
---(Needs testing on mobile)
+--LoadString here:
+--
 --Made by rouxhaver/1+1+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 if game.Players.LocalPlayer.PlayerGui:FindFirstChild("TouchGui") then
     game.Players.LocalPlayer.PlayerGui.TouchGui.TouchControlFrame.DynamicThumbstickFrame:Destroy()
