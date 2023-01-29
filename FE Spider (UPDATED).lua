@@ -1,6 +1,6 @@
 --(UPDATE ONE)
 
---for mobile: 
+--for mobile: https://github.com/rouxhaver/Load-strings/blob/main/FE%20spider%20mobile.lua
 
 --press E,Q to adjust height
 movement_speed = 0.75 --(multiplier, Recommended numbers: 0.5, 1, 2.5) 
