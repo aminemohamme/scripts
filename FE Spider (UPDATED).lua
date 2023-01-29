@@ -3,7 +3,7 @@
 --mobile: 
 
 --press E,Q to adjust height
-movement_speed = 2.5 --(multiplier, Recommended numbers: 0.5, 1, 2.5) 
+movement_speed = 0.75 --(multiplier, Recommended numbers: 0.5, 1, 2.5) 
 
 --made by rouxhaver/1+1=2
 
