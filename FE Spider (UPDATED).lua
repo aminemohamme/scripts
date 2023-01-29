@@ -1,6 +1,6 @@
 --(UPDATE ONE)
 
---mobile: 
+--for mobile: 
 
 --press E,Q to adjust height
 movement_speed = 0.75 --(multiplier, Recommended numbers: 0.5, 1, 2.5) 
