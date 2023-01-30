@@ -1,29 +1,6 @@
 --LoadString here:
---https://github.com/rouxhaver/Load-strings/blob/main/mini%20keyboard%20for%20mobile%20(QEWASD).lua
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts/main/minikeyboard%20(loadstring%20inside).lua"))()
 --Made by rouxhaver/1+1+2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
