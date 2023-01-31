@@ -11,7 +11,7 @@
 --https://www.roblox.com/catalog/63690008/Pal-Hair
 --https://www.roblox.com/catalog/62234425/Brown-Hair
 
---(MAKE SURE that when you spawn in that all of your accessorys scale down, if they don't then reset until they do)
+--(MAKE SURE that when you spawn in that all of your accessorys scale down in size, if they don't then reset until they do)
 
 player = game.Players.LocalPlayer
 char = player.Character
