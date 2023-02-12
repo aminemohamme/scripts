@@ -1,6 +1,8 @@
 --Pusher made by rouxhaver/1+1=2
 --Hat resizer and dropper made by DigitalityScripts
 
+--This script sometimes works in games without player-collision
+
 --INSTRUCTIONS:
 --use r15 body type
 --have a classic Rthro Head 
