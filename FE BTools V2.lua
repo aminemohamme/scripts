@@ -3,6 +3,8 @@
 --remade with more features
 --use ANY hats
 
+--(UPDATE: because reanimation got patched the first version of fe btools is better lol)
+
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Heartbeat = game:GetService("RunService").Heartbeat
 
