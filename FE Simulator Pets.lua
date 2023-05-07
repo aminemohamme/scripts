@@ -1,3 +1,7 @@
+--[[
+NOTE: due to a recent roblox change this script will most likely wont work,
+More info: https://www.youtube.com/post/Ugkxd2msc7Mh8Ue0bX2_XsE5xQiFY2mYJDSa
+]]
 -- made by rouxhaver/1+1=2
 -- use any hats
 -- make sure to run a netless/netbypass before running this script
